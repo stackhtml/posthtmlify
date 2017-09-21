@@ -1,0 +1,35 @@
+{
+  "name": "posthtmlify",
+  "description": "posthtml transform for documentify",
+  "version": "0.0.0",
+  "author": "Renée Kooi <renee@kooi.me>",
+  "bugs": {
+    "url": "https://github.com/goto-bus-stop/posthtmlify/issues"
+  },
+  "dependencies": {
+    "posthtml": "^0.9.2",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {
+    "assert-html": "^1.1.5",
+    "concat-stream": "^1.6.0",
+    "dedent": "^0.7.0",
+    "documentify": "github:goto-bus-stop/documentify#load-transforms",
+    "posthtml-custom-elements": "^1.1.0",
+    "posthtml-pug": "^1.0.2",
+    "tape": "^4.8.0"
+  },
+  "homepage": "https://github.com/goto-bus-stop/posthtmlify#readme",
+  "keywords": [
+    "documentify"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goto-bus-stop/posthtmlify.git"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  }
+}
