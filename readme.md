@@ -66,6 +66,45 @@ Passing options to posthtml plugins:
 documentify input.html -t [ posthtmlify --use [ posthtml-include --root "${PWD}" ] ] > output.html
 ```
 
+## Options
+
+### `use: []`
+
+List of posthtml plugins to use.
+Items can be plugin names or factory functions, or arrays containing a plugin name or factory function and an options object.
+
+```js
+d.transform(posthtmlify, {
+  use: [
+    'posthtml-custom-elements',
+    ['posthtml-custom-elements', { option: 'value' }],
+    [require('posthtml-custom-elements'), {}]
+  ]
+})
+```
+
+### `parser: 'posthtml-parser'`
+
+HTML parser module to use.
+Can be a string module name or a parse function.
+
+```js
+d.transform(posthtmlify, {
+  parser: 'posthtml-pug'
+})
+```
+
+### `render: 'posthtml-render'`
+
+Render module to use.
+Can be a string module name or a parse function.
+
+```js
+d.transform(posthtmlify, {
+  render: 'posthtml-jsx'
+})
+```
+
 ## License
 
 [MIT](LICENSE.md)
