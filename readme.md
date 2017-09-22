@@ -110,4 +110,4 @@ d.transform(posthtmlify, {
 [MIT](LICENSE.md)
 
 [posthtml]: https://github.com/posthtml/posthtml
-[documentify]: https://github.com/stackcss/documentify
+[documentify]: https://github.com/stackhtml/documentify
