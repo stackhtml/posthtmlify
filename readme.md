@@ -21,6 +21,33 @@ npm install posthtmlify
 
 ## Usage
 
+### `package.json`
+
+```json
+{
+  "documentify": {
+    "transform": [
+      ["posthtmlify", {
+        "use": [
+          "posthtml-custom-elements"
+        ]
+      }]
+    ]
+  }
+}
+```
+
+### Node API
+
+```js
+var documentify = require('documentify')
+var posthtmlify = require('posthtmlify')
+
+var d = documentify('./index.html').transform(posthtmlify, {
+  use: ['posthtml-custom-elements']
+})
+```
+
 ### `documentify` cli:
 
 ```bash
