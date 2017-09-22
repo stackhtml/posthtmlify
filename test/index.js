@@ -67,7 +67,7 @@ test('custom parsers', function (t) {
   d.transform(posthtmlify, {
     parser: require('posthtml-pug')({
       locals: { greeting: 'hi' }
-    }),
+    })
   })
   d.bundle().pipe(concat({ encoding: 'string' }, function (result) {
     assertHtml(t, result.replace(/\n +/g, ''), `
