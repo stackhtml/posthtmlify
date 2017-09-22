@@ -12,8 +12,9 @@ module.exports = function (opts) {
   if (typeof opts.render === 'string') {
     opts.render = require(opts.render)
   }
-
-  if (!opts.use) opts.use = []
+  if (opts.use == null) {
+    opts.use = []
+  }
 
   assert(opts.parser == null || typeof opts.parser === 'function', 'posthtmlify: opts.parser must be undefined or a function')
   assert(opts.render == null || typeof opts.render === 'function', 'posthtmlify: opts.render must be undefined or a function')
