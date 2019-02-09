@@ -32,7 +32,7 @@ module.exports = function (opts) {
     if (typeof factory === 'string') {
       factory = require(factory)
     }
-    assert.equal(typeof factory, 'function', 'posthtmlify: plugins must be functions')
+    assert.strictEqual(typeof factory, 'function', 'posthtmlify: plugins must be functions')
     plugins.push(factory(popts))
   }
 
