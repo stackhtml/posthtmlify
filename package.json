@@ -7,8 +7,8 @@
     "url": "https://github.com/stackhtml/posthtmlify/issues"
   },
   "dependencies": {
-    "posthtml": "^0.9.2",
-    "through2": "^3.0.0"
+    "posthtml": "^0.11.4",
+    "through2": "^3.0.1"
   },
   "devDependencies": {
     "assert-html": "^1.1.5",
@@ -19,7 +19,7 @@
     "posthtml-pug": "^1.0.2",
     "standard": "^12.0.1",
     "tap-spec": "^5.0.0",
-    "tape": "^4.9.2"
+    "tape": "^4.10.2"
   },
   "homepage": "https://github.com/stackhtml/posthtmlify#readme",
   "keywords": [
