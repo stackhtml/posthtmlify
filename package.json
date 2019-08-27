@@ -17,7 +17,7 @@
     "documentify": "^3.2.2",
     "posthtml-custom-elements": "^1.1.2",
     "posthtml-pug": "^1.0.2",
-    "standard": "^13.0.0",
+    "standard": "^14.0.2",
     "tap-spec": "^5.0.0",
     "tape": "^4.11.0"
   },
